@@ -1,5 +1,12 @@
 //losowanie liczby
 var wylosowanaliczba=Math.floor(Math.random()*100)+1;
+//wyswietlanie liczby
+function wyborLiczby(){
+    var ilosc=document.getElementById("zakres").value;
+    document.getElementById("wybranaLiczba").value=ilosc;
+    wylosowanaliczba=Math.floor(Math.random()*ilosc)+1;
+    iloscprob=0
+}
 //liczba prób
 var iloscprob=0
 function sprawdzLiczbe(){
