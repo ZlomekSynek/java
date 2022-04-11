@@ -10,13 +10,20 @@
 </head>
 <body>
     <div class="container">
-        <p>Podaj ilość znaków <input type="number" min="8" id="iloscZnakow" onclick="iloscZnakow()"></p>
+        <p>Podaj ilość znaków <input type="number" min="8" id="iloscZnakow" onchange="iloscZnakow()"></p>
         <p>Określ ilość cyfr  <input type="range" value="0" min="0" id="iloscCyfr" oninput="wybCyfr()">
         <output id="wybCyfr"></output>
         </p>
         <p>Określ ilość małych liter  <input type="range" value="0" min="0" id="iloscMaleL" oninput="wybMaleL()">
-            <output id="wybMaleL"></output>
-            </p>
+        <output id="wybMaleL"></output>
+        </p>
+        <p>Określ ilość dużych liter  <input type="range" value="0" min="0" id="iloscDuzeL" oninput="wybDuzeL()">
+        <output id="wybDuzeL"></output>
+        </p>
+        <p>Określ ilość znaków specjalnych  <input type="range" value="0" min="0" id="iloscZnSpec" oninput="wybZnSpec()">
+        <output id="wybZnSpec"></output>
+        </p>
+        <output id="wynik"></output>
     </div>
 </body>
 </html>
