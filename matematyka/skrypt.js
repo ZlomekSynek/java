@@ -22,6 +22,16 @@ function obejrz2(a,b){
     }
     return a
 }
-function NWW(){
-    
+function nww(){
+    let a=parseInt(document.getElementById("jedenNWW").value)
+    let b=parseInt(document.getElementById("dwaNWW").value)
+    let x=a*b
+    while(b!==0){
+        let c=a%b
+        a=b
+        b=c
+    }
+        let NWD=a
+        let wynik = x/NWD
+        document.getElementById("nwwWynik").value=wynik
 }
